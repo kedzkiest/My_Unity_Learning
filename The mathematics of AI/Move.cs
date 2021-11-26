@@ -22,7 +22,6 @@ public class Move : MonoBehaviour
     {
         this.transform.LookAt(goal.position);
         Vector3 direction = goal.position - this.transform.position;
-        Debug.DrawRay(this.transform.position, direction, Color.red);
 
         dist = displayDist.GetDist();
         
